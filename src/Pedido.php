@@ -63,8 +63,8 @@ class Pedido {
   /**
    * @return mixed
    */
-  public function getFechaPedido() {
-    return $this->fecha_pedido;
+  public function getFechaPedido($format = 'd-m-Y H:i:s') {
+    return date_format($this->fecha_pedido, $format);
   }
 
   /**
