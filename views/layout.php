@@ -21,7 +21,7 @@
 
 <nav class="navegacion">
   <a href="/">Inicio</a>
-  <a href="productos.html">Productos</a>
+  <a href="/?page=productos">Productos</a>
   <a href="/?page=pedidos">Pedidos</a>
   <a href="/?page=facturas">Facturas</a>
   <a href="/?page=usuarios">Usuarios</a>

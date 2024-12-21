@@ -62,8 +62,8 @@ class Factura {
   /**
    * @return mixed
    */
-  public function getFechaEmision() {
-    return $this->fecha_emision;
+  public function getFechaEmision($formnat = 'd-m-Y') {
+    return date_format($this->fecha_emision, $formnat);
   }
 
   /**
