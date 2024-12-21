@@ -45,9 +45,9 @@
       <td><?= $usuario->getCorreo(); ?></td>
       <td>
         <ul class="acciones">
-          <li><a href="#" class="boton">Editar</a></li>
-          <li><a href="#" class="boton">Eliminar</a></li>
-          <li><a href="#" class="boton">Realizar Pedido</a></li>
+
+          <li><a href="/?page=usuarios&accion=eliminar&id=<?= $usuario->getIdUsuario(); ?>" class="boton">Eliminar</a></li>
+
         </ul>
       </td>
     </tr>
