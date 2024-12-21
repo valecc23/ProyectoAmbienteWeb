@@ -5,7 +5,7 @@ global $entityManager;
 
 use App\Entity\Producto;
 
-$pagina = $_GET["page"];
+$pagina = $_GET["page"] ?? FALSE;
 
 switch ($pagina) {
   case 'productos':
@@ -13,6 +13,12 @@ switch ($pagina) {
     break;
   case 'pedidos':
     require 'controllers/pedidos.php';
+    break;
+  case 'usuarios':
+    require 'controllers/usuarios.php';
+    break;
+  case 'facturas':
+    require 'controllers/facturas.php';
     break;
   default:
     require "src/Producto.php";
