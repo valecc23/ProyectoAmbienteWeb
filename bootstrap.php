@@ -24,3 +24,4 @@ $connection = DriverManager::getConnection([
 
 // obtaining the entity manager
 $entityManager = new EntityManager($connection, $config);
+$templates = new League\Plates\Engine('/views');
