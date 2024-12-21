@@ -132,6 +132,71 @@
     text-align: left;
 }
 
+/* Estilos de Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contenedor_footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer_seccion {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer_seccion h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #f4f4f4;
+}
+
+.footer_seccion p,
+.footer_seccion ul {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.footer_seccion ul {
+    list-style: none;
+}
+
+.footer_seccion ul li {
+    margin: 5px 0;
+}
+
+.footer_seccion ul li a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer_seccion ul li a:hover {
+    color: #79e08a;
+}
+
+.footer_derechos {
+    background-color: #222;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer_derechos p {
+    margin: 0;
+}
 
 
 .tabla td {
@@ -147,4 +212,17 @@
 
 .tabla tr:nth-child(even) {
     background-color: #f5f5f5;
+}
+
+.tabla {
+    ul {
+        display: flex;
+        li {
+            list-style: none;
+            margin: 0 2px;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
 }
