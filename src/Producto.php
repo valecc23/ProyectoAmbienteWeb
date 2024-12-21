@@ -58,6 +58,12 @@ class Producto {
     return $this->precio;
   }
 
+  public function getFormatedPrecio(){
+    return sprintf("₡ %s / $ %s",
+      number_format($this->precio * 510, 2, '.', ','),
+      number_format($this->precio , 2, '.', ','));
+  }
+
   /**
    * @param mixed $precio
    */
